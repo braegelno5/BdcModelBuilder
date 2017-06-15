@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetMountainBikes">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMountainBikesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMountainBikesResult" type="tns:ArrayOfMountainBike" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMountainBike">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MountainBike" nillable="true" type="tns:MountainBike" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MountainBike">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Manufacturer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Model" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Forks" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RearShock" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BrakeSet" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="QuantityInStock" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMountainBike">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMountainBikeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMountainBikeResult" type="tns:MountainBike" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMountainBike">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bike" type="tns:MountainBike" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMountainBikeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMountainBikeResult" type="tns:MountainBike" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMountainBike">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMountainBikeResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMountainBikesComplex">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMountainBikesComplexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMountainBikesComplexResult" type="tns:BusinessDataEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BusinessDataEntity">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bike" type="tns:MountainBike" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bikes" type="tns:ArrayOfMountainBike" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMountainBikeComplex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bde" type="tns:BusinessDataEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMountainBikeComplexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMountainBikeComplexResult" type="tns:BusinessDataEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMountainBikeComplex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bde" type="tns:BusinessDataEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMountainBikeComplexResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMountainBikeComplexResult" type="tns:BusinessDataEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMountainBikeComplex">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="bde" type="tns:BusinessDataEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteMountainBikeComplexResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetMountainBikesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMountainBikes" />
+  </wsdl:message>
+  <wsdl:message name="GetMountainBikesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMountainBikesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMountainBikeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMountainBike" />
+  </wsdl:message>
+  <wsdl:message name="GetMountainBikeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMountainBikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMountainBikeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMountainBike" />
+  </wsdl:message>
+  <wsdl:message name="AddMountainBikeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMountainBikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMountainBikeSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteMountainBike" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMountainBikeSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteMountainBikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMountainBikesComplexSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMountainBikesComplex" />
+  </wsdl:message>
+  <wsdl:message name="GetMountainBikesComplexSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMountainBikesComplexResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMountainBikeComplexSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMountainBikeComplex" />
+  </wsdl:message>
+  <wsdl:message name="GetMountainBikeComplexSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMountainBikeComplexResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMountainBikeComplexSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMountainBikeComplex" />
+  </wsdl:message>
+  <wsdl:message name="AddMountainBikeComplexSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMountainBikeComplexResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMountainBikeComplexSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteMountainBikeComplex" />
+  </wsdl:message>
+  <wsdl:message name="DeleteMountainBikeComplexSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteMountainBikeComplexResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BikeServiceSoap">
+    <wsdl:operation name="GetMountainBikes">
+      <wsdl:input message="tns:GetMountainBikesSoapIn" />
+      <wsdl:output message="tns:GetMountainBikesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMountainBike">
+      <wsdl:input message="tns:GetMountainBikeSoapIn" />
+      <wsdl:output message="tns:GetMountainBikeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMountainBike">
+      <wsdl:input message="tns:AddMountainBikeSoapIn" />
+      <wsdl:output message="tns:AddMountainBikeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMountainBike">
+      <wsdl:input message="tns:DeleteMountainBikeSoapIn" />
+      <wsdl:output message="tns:DeleteMountainBikeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMountainBikesComplex">
+      <wsdl:input message="tns:GetMountainBikesComplexSoapIn" />
+      <wsdl:output message="tns:GetMountainBikesComplexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMountainBikeComplex">
+      <wsdl:input message="tns:GetMountainBikeComplexSoapIn" />
+      <wsdl:output message="tns:GetMountainBikeComplexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMountainBikeComplex">
+      <wsdl:input message="tns:AddMountainBikeComplexSoapIn" />
+      <wsdl:output message="tns:AddMountainBikeComplexSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMountainBikeComplex">
+      <wsdl:input message="tns:DeleteMountainBikeComplexSoapIn" />
+      <wsdl:output message="tns:DeleteMountainBikeComplexSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BikeServiceSoap" type="tns:BikeServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMountainBikes">
+      <soap:operation soapAction="http://tempuri.org/GetMountainBikes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMountainBike">
+      <soap:operation soapAction="http://tempuri.org/GetMountainBike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMountainBike">
+      <soap:operation soapAction="http://tempuri.org/AddMountainBike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMountainBike">
+      <soap:operation soapAction="http://tempuri.org/DeleteMountainBike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMountainBikesComplex">
+      <soap:operation soapAction="http://tempuri.org/GetMountainBikesComplex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMountainBikeComplex">
+      <soap:operation soapAction="http://tempuri.org/GetMountainBikeComplex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMountainBikeComplex">
+      <soap:operation soapAction="http://tempuri.org/AddMountainBikeComplex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMountainBikeComplex">
+      <soap:operation soapAction="http://tempuri.org/DeleteMountainBikeComplex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BikeServiceSoap12" type="tns:BikeServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetMountainBikes">
+      <soap12:operation soapAction="http://tempuri.org/GetMountainBikes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMountainBike">
+      <soap12:operation soapAction="http://tempuri.org/GetMountainBike" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMountainBike">
+      <soap12:operation soapAction="http://tempuri.org/AddMountainBike" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMountainBike">
+      <soap12:operation soapAction="http://tempuri.org/DeleteMountainBike" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMountainBikesComplex">
+      <soap12:operation soapAction="http://tempuri.org/GetMountainBikesComplex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMountainBikeComplex">
+      <soap12:operation soapAction="http://tempuri.org/GetMountainBikeComplex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMountainBikeComplex">
+      <soap12:operation soapAction="http://tempuri.org/AddMountainBikeComplex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMountainBikeComplex">
+      <soap12:operation soapAction="http://tempuri.org/DeleteMountainBikeComplex" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BikeService">
+    <wsdl:port name="BikeServiceSoap" binding="tns:BikeServiceSoap">
+      <soap:address location="http://localhost:8080/ASMXBikeService/BikeService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BikeServiceSoap12" binding="tns:BikeServiceSoap12">
+      <soap12:address location="http://localhost:8080/ASMXBikeService/BikeService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

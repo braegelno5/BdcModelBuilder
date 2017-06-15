@@ -1,0 +1,66 @@
+﻿<!-- 
+// (c) Copyright Webber-Cross Software Ltd.
+// This source is subject to the Microsoft Public License (Ms-PL).
+// Please see http://go.microsoft.com/fwlink/?LinkID=131993 for details.
+// All other rights reserved.
+-->
+    
+    <UserControl x:Class="WebberCross.BdcModelBuilder.TabControls.EntityDetailsTab"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             >
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="105"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="35"/>
+            </Grid.ColumnDefinitions>
+
+            <Label >Entity Source:</Label>
+            <Label Grid.Row="1">Entity Name:</Label>
+            <Label Grid.Row="2">Display Name:</Label>
+
+            <TextBox x:Name="tbEntitySource" Grid.Column="1" Margin="3" Text="{Binding Path=ModelContainer.CurrentModel.EntityDetails.EntitySource}" IsEnabled="{Binding Path=ModelContainer.EditMode, Mode=OneWay}" />
+            <TextBox x:Name="tbEntityName" Grid.Row="1" Grid.Column="1" Margin="3" Grid.ColumnSpan="2" Text="{Binding Path=ModelContainer.CurrentModel.EntityDetails.EntityName}" IsEnabled="{Binding Path=ModelContainer.EditMode, Mode=OneWay}" />
+            <TextBox x:Name="tbDisaplyName" Grid.Row="2" Grid.Column="1" Margin="3" Grid.ColumnSpan="2" Text="{Binding Path=ModelContainer.CurrentModel.EntityDetails.DisplayName}"  IsEnabled="{Binding Path=ModelContainer.EditMode, Mode=OneWay}" />
+            
+            <Button x:Name="btnEntitySource" Grid.Column="2" Content="..." Margin="3" Command="{Binding Path=EDVM.GetEntityDetailsCommand}" IsEnabled="{Binding Path=ModelContainer.EditMode, Mode=OneWay}" />
+
+        </Grid>
+
+        <DataGrid Grid.Row="2" ItemsSource="{Binding Path=ModelContainer.CurrentModel.EntityDetails.EntityProps, Mode=TwoWay}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" 
+                  HorizontalGridLinesBrush="Gray" VerticalGridLinesBrush="Gray" 
+                  IsEnabled="{Binding Path=ModelContainer.EditMode, Mode=OneWay}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" RowHeight="25">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Property" Width="100" Binding="{Binding Name}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Type" Width="100" Binding="{Binding PropTypeName}" IsReadOnly="True"/>
+                <DataGridCheckBoxColumn Header="Identifier" Width="100" Binding="{Binding IsIdentifier}"/>
+                <DataGridCheckBoxColumn Header="Include" Width="100" Binding="{Binding Read}"/>
+                <DataGridCheckBoxColumn Header="Read Only" Width="100" Binding="{Binding ReadOnly}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</UserControl>

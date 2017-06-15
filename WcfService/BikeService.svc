@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WebberCross.BdcModelBuilder.WcfBikeService.BikeService" CodeBehind="BikeService.svc.cs" %>

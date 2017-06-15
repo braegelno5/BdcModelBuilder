@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="WCFCompositeID" xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog">
+  <LobSystems>
+    <LobSystem Name="WCFCompositeID" Type="DotNetAssembly">
+      <LobSystemInstances>
+        <LobSystemInstance Name="WCFCompositeID" />
+      </LobSystemInstances>
+      <Entities>
+        <Entity Name="MountainBikeEntity" Namespace="WebberCross.BdcModelBuilder.WCFCompositeID" DefaultDisplayName="MountainBikeEntity" EstimatedInstanceCount="1000" Version="1.0.0.0">
+          <Properties>
+            <Property Name="Class" Type="System.String">WebberCross.BdcModelBuilder.WCFCompositeID.MountainBikeEntityService, WCFCompositeID</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="Manufacturer" TypeName="System.String" />
+            <Identifier Name="Model" TypeName="System.String" />
+          </Identifiers>
+          <Methods>
+            <!--ReadList Method-->
+            <Method Name="ReadList">
+              <Parameters>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="System.Collections.Generic.IEnumerable`1[[WebberCross.BdcModelBuilder.WCFCompositeID.MountainBikeEntity, WCFCompositeID]]" IsCollection="true" Name="MountainBikeEntityList">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="WebberCross.BdcModelBuilder.WCFCompositeID.MountainBikeEntity, WCFCompositeID" Name="MountainBikeEntity">
+                        <TypeDescriptors>
+                          <TypeDescriptor TypeName="System.String" Name="BrakeSet" />
+                          <TypeDescriptor TypeName="System.String" Name="Forks" />
+                          <TypeDescriptor TypeName="System.Int32" Name="ID" ReadOnly="true" />
+                          <TypeDescriptor TypeName="System.String" Name="Manufacturer" IdentifierName="Manufacturer" />
+                          <TypeDescriptor TypeName="System.String" Name="Model" IdentifierName="Model" />
+                          <TypeDescriptor TypeName="System.Int32" Name="QuantityInStock" />
+                          <TypeDescriptor TypeName="System.String" Name="RearShock" />
+                        </TypeDescriptors>
+                      </TypeDescriptor>
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Finder" ReturnParameterName="returnParameter" Default="true" Name="ReadList" DefaultDisplayName="MountainBikeEntity List" />
+              </MethodInstances>
+            </Method>
+            <!--ReadItem Method-->
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Direction="In" Name="id1">
+                  <TypeDescriptor TypeName="System.String" IdentifierName="Manufacturer" Name="param1" />
+                </Parameter>
+                <Parameter Direction="In" Name="id2">
+                  <TypeDescriptor TypeName="System.String" IdentifierName="Model" Name="param2" />
+                </Parameter>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="WebberCross.BdcModelBuilder.WCFCompositeID.MountainBikeEntity, WCFCompositeID" Name="MountainBikeEntity">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String" Name="BrakeSet" />
+                      <TypeDescriptor TypeName="System.String" Name="Forks" />
+                      <TypeDescriptor TypeName="System.Int32" Name="ID" ReadOnly="true" />
+                      <TypeDescriptor TypeName="System.String" Name="Manufacturer" IdentifierName="Manufacturer" />
+                      <TypeDescriptor TypeName="System.String" Name="Model" IdentifierName="Model" />
+                      <TypeDescriptor TypeName="System.Int32" Name="QuantityInStock" />
+                      <TypeDescriptor TypeName="System.String" Name="RearShock" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="SpecificFinder" ReturnParameterName="returnParameter" Default="true" Name="ReadItem" DefaultDisplayName="Read MountainBikeEntity" />
+              </MethodInstances>
+            </Method>
+            <!--Create Method-->
+            <Method Name="Create">
+              <Parameters>
+                <Parameter Direction="Return" Name="returnParameter">
+                  <TypeDescriptor TypeName="WebberCross.BdcModelBuilder.WCFCompositeID.MountainBikeEntity, WCFCompositeID" Name="MountainBikeEntity">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String" Name="BrakeSet" />
+                      <TypeDescriptor TypeName="System.String" Name="Forks" />
+                      <TypeDescriptor TypeName="System.Int32" Name="ID" ReadOnly="true" />
+                      <TypeDescriptor TypeName="System.String" Name="Manufacturer" IdentifierName="Manufacturer" />
+                      <TypeDescriptor TypeName="System.String" Name="Model" IdentifierName="Model" />
+                      <TypeDescriptor TypeName="System.Int32" Name="QuantityInStock" />
+                      <TypeDescriptor TypeName="System.String" Name="RearShock" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+                <Parameter Direction="In" Name="param1">
+                  <TypeDescriptor TypeName="WebberCross.BdcModelBuilder.WCFCompositeID.MountainBikeEntity, WCFCompositeID" Name="MountainBikeEntity">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String" Name="BrakeSet" CreatorField="true" />
+                      <TypeDescriptor TypeName="System.String" Name="Forks" CreatorField="true" />
+                      <TypeDescriptor TypeName="System.Int32" Name="ID" />
+                      <TypeDescriptor TypeName="System.Int32" Name="QuantityInStock" CreatorField="true" />
+                      <TypeDescriptor TypeName="System.String" Name="RearShock" CreatorField="true" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Creator" ReturnParameterName="returnParameter" Default="true" Name="Create" DefaultDisplayName="Create MountainBikeEntity" />
+              </MethodInstances>
+            </Method>
+            <!--Delete Method-->
+            <Method Name="Delete">
+              <Parameters>
+                <Parameter Direction="In" Name="param1">
+                  <TypeDescriptor TypeName="System.String" IdentifierName="Manufacturer" Name="id1" />
+                </Parameter>
+                <Parameter Direction="In" Name="param2">
+                  <TypeDescriptor TypeName="System.String" IdentifierName="Model" Name="id2" />
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Deleter" Name="Delete" />
+              </MethodInstances>
+            </Method>
+            <!--Update Method-->
+            <Method Name="Update">
+              <Parameters>
+                <Parameter Direction="In" Name="param1">
+                  <TypeDescriptor TypeName="WebberCross.BdcModelBuilder.WCFCompositeID.MountainBikeEntity, WCFCompositeID" Name="MountainBikeEntity">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.String" UpdaterField="true" Name="BrakeSet" />
+                      <TypeDescriptor TypeName="System.String" UpdaterField="true" Name="Forks" />
+                      <TypeDescriptor TypeName="System.Int32" UpdaterField="true" Name="ID" />
+                      <TypeDescriptor TypeName="System.String" UpdaterField="true" Name="Manufacturer" IdentifierName="Manufacturer" PreUpdaterField="true" />
+                      <TypeDescriptor TypeName="System.String" UpdaterField="true" Name="Model" IdentifierName="Model" PreUpdaterField="true" />
+                      <TypeDescriptor TypeName="System.Int32" UpdaterField="true" Name="QuantityInStock" />
+                      <TypeDescriptor TypeName="System.String" UpdaterField="true" Name="RearShock" />
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Updater" Name="Update" />
+              </MethodInstances>
+            </Method>
+          </Methods>
+        </Entity>
+      </Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>

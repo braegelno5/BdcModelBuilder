@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2f74f048-d656-44de-9edb-afc5991e10b4" solutionId="2f74f048-d656-44de-9edb-afc5991e10b4" resetWebServer="false" name="BdcModelDemo" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="BdcModelBuilder.ServiceShim.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\ServiceShim\ServiceShim.csproj">
+      <safeControls>
+        <safeControl assemblyName="BdcModelBuilder.ServiceShim" namespaceName="BdcModelBuilder.ServiceShim" typeName="*" isSafeAgainstScript="false" />
+      </safeControls>
+    </projectOutputAssembly>
+  </assemblies>
+  <features>
+    <featureReference itemId="d06a97c6-215e-45ff-b0f7-e97663efa5e9" />
+    <featureReference itemId="d013df12-7a8e-4d09-aea3-ea72b4a87c13" />
+    <featureReference itemId="b82214c5-097b-4831-a97d-0d30bb6fc029" />
+    <featureReference itemId="caca2bae-2240-460c-8213-278f1ae2976d" />
+  </features>
+</package>

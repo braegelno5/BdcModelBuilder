@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="BikeService.asmx.cs" Class="WebberCross.BdcModelBuilder.ASMXBikeService.BikeService" %>

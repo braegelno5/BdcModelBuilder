@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79C448F8-372A-48E1-A209-70538FA43A87}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BdcModelDemo</RootNamespace>
+    <AssemblyName>BdcModelDemo</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ASMXComplexDemo1\MountainBikeEntityEntity.cs" />
+    <Compile Include="ASMXComplexDemo1\MountainBikeEntityServiceEntityService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Utilities.cs" />
+    <Compile Include="Utilities\DataContractCopy.cs" />
+    <Compile Include="Utilities\ReflectionUtility.cs" />
+    <Compile Include="WCFComplexDemo1\MountainBikeEntityEntity.cs" />
+    <Compile Include="WCFComplexDemo1\MountainBikeEntityServiceEntityService.cs" />
+    <Compile Include="WCFCompositeID\MountainBikeEntityEntity.cs" />
+    <Compile Include="WCFCompositeID\MountainBikeEntityServiceEntityService.cs" />
+    <Compile Include="WCFSimpleDemo1\MountainBikeEntityEntity.cs" />
+    <Compile Include="WCFSimpleDemo1\MountainBikeEntityServiceEntityService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ASMXComplexDemo1\ASMXComplexDemo1\ASMXComplexDemo1.bdcm" />
+    <None Include="ASMXComplexDemo1\ASMXComplexDemo1\ASMXComplexDemo1.bdcm.diagram">
+      <DependentUpon>ASMXComplexDemo1.bdcm</DependentUpon>
+    </None>
+    <None Include="ASMXComplexDemo1\ASMXComplexDemo1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8d355d15-defe-46e4-98e7-0066b93db533}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{d06a97c6-215e-45ff-b0f7-e97663efa5e9}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{d013df12-7a8e-4d09-aea3-ea72b4a87c13}</FeatureId>
+    </None>
+    <None Include="Features\Feature3\Feature3.feature">
+      <FeatureId>{b82214c5-097b-4831-a97d-0d30bb6fc029}</FeatureId>
+    </None>
+    <None Include="Features\Feature4\Feature4.feature">
+      <FeatureId>{caca2bae-2240-460c-8213-278f1ae2976d}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{2f74f048-d656-44de-9edb-afc5991e10b4}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WCFComplexDemo1\WCFComplexDemo1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6d516700-a037-4dc1-9b67-808eb7054263}</SharePointProjectItemId>
+    </None>
+    <None Include="WCFComplexDemo1\WCFComplexDemo1\WCFComplexDemo1.bdcm" />
+    <None Include="WCFComplexDemo1\WCFComplexDemo1\WCFComplexDemo1.bdcm.diagram">
+      <DependentUpon>WCFComplexDemo1.bdcm</DependentUpon>
+    </None>
+    <None Include="WCFCompositeID\WCFCompositeID\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c43845c-8d8c-4a81-8549-4bb06676bcfe}</SharePointProjectItemId>
+    </None>
+    <None Include="WCFCompositeID\WCFCompositeID\WCFCompositeID.bdcm" />
+    <None Include="WCFCompositeID\WCFCompositeID\WCFCompositeID.bdcm.diagram">
+      <DependentUpon>WCFCompositeID.bdcm</DependentUpon>
+    </None>
+    <None Include="WCFSimpleDemo1\WCFSimpleDemo1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d78c2087-4416-4c18-8db8-31578059f7db}</SharePointProjectItemId>
+    </None>
+    <None Include="WCFSimpleDemo1\WCFSimpleDemo1\WCFSimpleDemo1.bdcm" />
+    <None Include="WCFSimpleDemo1\WCFSimpleDemo1\WCFSimpleDemo1.bdcm.diagram">
+      <DependentUpon>WCFSimpleDemo1.bdcm</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceShim\ServiceShim.csproj">
+      <Project>{896ED505-54D8-42FF-81AC-C63CFEF2B02C}</Project>
+      <Name>ServiceShim</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature3\Feature3.Template.xml">
+      <DependentUpon>Feature3.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature4\Feature4.Template.xml">
+      <DependentUpon>Feature4.feature</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

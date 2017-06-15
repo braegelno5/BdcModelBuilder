@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ModelContainer xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CurrentID>50a86e90-d1af-4178-81b6-2eb54dde7349</CurrentID>
+	<Models>
+		<Model>
+			<AssemblyPath>C:\Data\CodePlex\BdcModelBuilder\Template\ServiceShim\bin\Debug\WebberCross.BdcModelBuilder.ServiceShim.dll</AssemblyPath>
+			<OpPath>C:\Data\CodePlex\BdcModelBuilder\Template\BdcModelTemplate</OpPath>
+			<Name>TemplateModel1</Name>
+			<ModelNS>WebberCross.BdcModelBuilder.TemplateModel1</ModelNS>
+			<TargetNameSpace>WebberCross.BdcModelBuilder.BdcModelTemplate</TargetNameSpace>
+			<Output>true</Output>
+			<ID>50a86e90-d1af-4178-81b6-2eb54dde7349</ID>
+			<EntityDetails>
+				<EntitySource>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</EntitySource>
+				<EntityName>MountainBikeEntity</EntityName>
+				<EntityFullName />
+				<DisplayName>MountainBikeEntity</DisplayName>
+				<EntityProps>
+					<EntityProperties>
+						<Name>BrakeSet</Name>
+						<PropTypeName>String</PropTypeName>
+						<PropTypeFullName>System.String</PropTypeFullName>
+						<Read>true</Read>
+						<Update>false</Update>
+						<Delete>false</Delete>
+						<Create>false</Create>
+						<ReadOnly>false</ReadOnly>
+						<IsIdentifier>false</IsIdentifier>
+					</EntityProperties>
+					<EntityProperties>
+						<Name>ExtensionData</Name>
+						<PropTypeName>ExtensionDataObject</PropTypeName>
+						<PropTypeFullName>System.Runtime.Serialization.ExtensionDataObject</PropTypeFullName>
+						<Read>false</Read>
+						<Update>false</Update>
+						<Delete>false</Delete>
+						<Create>false</Create>
+						<ReadOnly>false</ReadOnly>
+						<IsIdentifier>false</IsIdentifier>
+					</EntityProperties>
+					<EntityProperties>
+						<Name>Forks</Name>
+						<PropTypeName>String</PropTypeName>
+						<PropTypeFullName>System.String</PropTypeFullName>
+						<Read>true</Read>
+						<Update>false</Update>
+						<Delete>false</Delete>
+						<Create>false</Create>
+						<ReadOnly>false</ReadOnly>
+						<IsIdentifier>false</IsIdentifier>
+					</EntityProperties>
+					<EntityProperties>
+						<Name>ID</Name>
+						<PropTypeName>Int32</PropTypeName>
+						<PropTypeFullName>System.Int32</PropTypeFullName>
+						<Read>true</Read>
+						<Update>false</Update>
+						<Delete>false</Delete>
+						<Create>false</Create>
+						<ReadOnly>false</ReadOnly>
+						<IsIdentifier>true</IsIdentifier>
+					</EntityProperties>
+					<EntityProperties>
+						<Name>Manufacturer</Name>
+						<PropTypeName>String</PropTypeName>
+						<PropTypeFullName>System.String</PropTypeFullName>
+						<Read>true</Read>
+						<Update>false</Update>
+						<Delete>false</Delete>
+						<Create>false</Create>
+						<ReadOnly>false</ReadOnly>
+						<IsIdentifier>false</IsIdentifier>
+					</EntityProperties>
+					<EntityProperties>
+						<Name>Model</Name>
+						<PropTypeName>String</PropTypeName>
+						<PropTypeFullName>System.String</PropTypeFullName>
+						<Read>true</Read>
+						<Update>false</Update>
+						<Delete>false</Delete>
+						<Create>false</Create>
+						<ReadOnly>false</ReadOnly>
+						<IsIdentifier>false</IsIdentifier>
+					</EntityProperties>
+					<EntityProperties>
+						<Name>QuantityInStock</Name>
+						<PropTypeName>Int32</PropTypeName>
+						<PropTypeFullName>System.Int32</PropTypeFullName>
+						<Read>true</Read>
+						<Update>false</Update>
+						<Delete>false</Delete>
+						<Create>false</Create>
+						<ReadOnly>false</ReadOnly>
+						<IsIdentifier>false</IsIdentifier>
+					</EntityProperties>
+					<EntityProperties>
+						<Name>RearShock</Name>
+						<PropTypeName>String</PropTypeName>
+						<PropTypeFullName>System.String</PropTypeFullName>
+						<Read>true</Read>
+						<Update>false</Update>
+						<Delete>false</Delete>
+						<Create>false</Create>
+						<ReadOnly>false</ReadOnly>
+						<IsIdentifier>false</IsIdentifier>
+					</EntityProperties>
+				</EntityProps>
+			</EntityDetails>
+			<DataSourceInstance>
+				<Name>Root</Name>
+				<NestedInstances>
+					<InstanceNode>
+						<Name>BikeServiceClient</Name>
+						<NestedInstances />
+						<ConstructorParameters />
+						<InstanceTypeName>BikeServiceClient</InstanceTypeName>
+						<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+						<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BikeServiceClient</InstanceTypeFullName>
+						<Value />
+						<CfgKey />
+						<IsEntity>false</IsEntity>
+						<ParamNumber>0</ParamNumber>
+						<InstancePaths />
+						<InstanceID>24deb13c-0eee-4cb1-b5bb-7f81673c585a</InstanceID>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</InstanceNode>
+				</NestedInstances>
+				<ConstructorParameters>
+					<InstanceNode>
+						<Name>binding</Name>
+						<NestedInstances />
+						<ConstructorParameters />
+						<InstanceTypeName>Binding</InstanceTypeName>
+						<InstanceTypeNameSpace>System.ServiceModel.Channels</InstanceTypeNameSpace>
+						<InstanceTypeFullName>System.ServiceModel.Channels.Binding</InstanceTypeFullName>
+						<Value>new BasicHttpBinding()</Value>
+						<CfgKey />
+						<IsEntity>false</IsEntity>
+						<ParamNumber>0</ParamNumber>
+						<InstancePaths />
+						<InstanceID>0a176637-1318-42f5-89c0-b97e838168cb</InstanceID>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</InstanceNode>
+					<InstanceNode>
+						<Name>remoteAddress</Name>
+						<NestedInstances />
+						<ConstructorParameters />
+						<InstanceTypeName>EndpointAddress</InstanceTypeName>
+						<InstanceTypeNameSpace>System.ServiceModel</InstanceTypeNameSpace>
+						<InstanceTypeFullName>System.ServiceModel.EndpointAddress</InstanceTypeFullName>
+						<Value>new EndpointAddress("http://localhost:8080/TemplateWcfBikeService/BikeService.svc")</Value>
+						<CfgKey />
+						<IsEntity>false</IsEntity>
+						<ParamNumber>0</ParamNumber>
+						<InstancePaths />
+						<InstanceID>fddbc8f4-6ad9-482e-9bdc-0d20d14d0bb2</InstanceID>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</InstanceNode>
+				</ConstructorParameters>
+				<Value />
+				<CfgKey />
+				<IsEntity>false</IsEntity>
+				<ParamNumber>0</ParamNumber>
+				<InstancePaths />
+				<InstanceID>66c8cacd-9832-4131-9a64-914fc88b49a3</InstanceID>
+				<IsArray>false</IsArray>
+				<ElementTypeName />
+			</DataSourceInstance>
+			<Methods>
+				<ReadListMethod>
+					<MethodType>Read List</MethodType>
+					<Include>true</Include>
+					<MethodName>GetMountainBikesComplex</MethodName>
+					<ReturnTypeName>MountainBike[]</ReturnTypeName>
+					<ReturnTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike[]</ReturnTypeFullName>
+					<ReturnObject>
+						<Name>Root</Name>
+						<NestedInstances>
+							<InstanceNode>
+								<Name>BusinessDataEntity</Name>
+								<NestedInstances>
+									<InstanceNode>
+										<Name>Bikes</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>MountainBike[]</InstanceTypeName>
+										<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+										<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike[]</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>0</ParamNumber>
+										<InstancePaths />
+										<InstanceID>991b1ca8-f81e-4571-8519-fedba9d86c56</InstanceID>
+										<IsArray>true</IsArray>
+										<ElementTypeName>MountainBike</ElementTypeName>
+									</InstanceNode>
+								</NestedInstances>
+								<ConstructorParameters />
+								<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+								<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+								<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<ParamNumber>0</ParamNumber>
+								<InstancePaths />
+								<InstanceID>0800a380-c47f-4f91-8553-c53eee42eb8e</InstanceID>
+								<IsArray>false</IsArray>
+								<ElementTypeName />
+							</InstanceNode>
+						</NestedInstances>
+						<ConstructorParameters />
+						<Value />
+						<CfgKey />
+						<IsEntity>false</IsEntity>
+						<ParamNumber>0</ParamNumber>
+						<InstancePaths>
+							<InstancePath>
+								<Path>BusinessDataEntity.Bikes</Path>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<Node>
+									<Name>Bikes</Name>
+									<NestedInstances />
+									<ConstructorParameters />
+									<InstanceTypeName>MountainBike[]</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike[]</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>0</ParamNumber>
+									<InstancePaths />
+									<InstanceID>991b1ca8-f81e-4571-8519-fedba9d86c56</InstanceID>
+									<IsArray>true</IsArray>
+									<ElementTypeName>MountainBike</ElementTypeName>
+								</Node>
+								<InstanceID>991b1ca8-f81e-4571-8519-fedba9d86c56</InstanceID>
+								<ParamNumber>0</ParamNumber>
+							</InstancePath>
+						</InstancePaths>
+						<InstanceID>8bd62267-f293-4b86-960b-58365860eea5</InstanceID>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</ReturnObject>
+					<IsArray>true</IsArray>
+					<ElementTypeName>MountainBike</ElementTypeName>
+				</ReadListMethod>
+				<ReadItemMethod>
+					<MethodType>Read Item</MethodType>
+					<Include>true</Include>
+					<MethodName>GetMountainBikeComplex</MethodName>
+					<ReturnTypeName>MountainBike</ReturnTypeName>
+					<ReturnTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</ReturnTypeFullName>
+					<ReturnObject>
+						<Name>Root</Name>
+						<NestedInstances>
+							<InstanceNode>
+								<Name>BusinessDataEntity</Name>
+								<NestedInstances>
+									<InstanceNode>
+										<Name>Bike</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>MountainBike</InstanceTypeName>
+										<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+										<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>0</ParamNumber>
+										<InstancePaths />
+										<InstanceID>9b7c0380-061c-4a69-9157-114426219933</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</InstanceNode>
+								</NestedInstances>
+								<ConstructorParameters />
+								<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+								<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+								<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<ParamNumber>0</ParamNumber>
+								<InstancePaths />
+								<InstanceID>f14b2203-ba74-4d0f-bbf4-1434bf24ce07</InstanceID>
+								<IsArray>false</IsArray>
+								<ElementTypeName />
+							</InstanceNode>
+						</NestedInstances>
+						<ConstructorParameters />
+						<Value />
+						<CfgKey />
+						<IsEntity>false</IsEntity>
+						<ParamNumber>0</ParamNumber>
+						<InstancePaths>
+							<InstancePath>
+								<Path>BusinessDataEntity.Bike</Path>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<Node>
+									<Name>Bike</Name>
+									<NestedInstances />
+									<ConstructorParameters />
+									<InstanceTypeName>MountainBike</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>0</ParamNumber>
+									<InstancePaths />
+									<InstanceID>9b7c0380-061c-4a69-9157-114426219933</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</Node>
+								<InstanceID>9b7c0380-061c-4a69-9157-114426219933</InstanceID>
+								<ParamNumber>0</ParamNumber>
+							</InstancePath>
+						</InstancePaths>
+						<InstanceID>653094c5-73d4-4ebd-a38d-ee76d859c626</InstanceID>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</ReturnObject>
+					<MethodParams>
+						<Name>Root</Name>
+						<NestedInstances>
+							<InstanceNode>
+								<Name>bde</Name>
+								<NestedInstances>
+									<InstanceNode>
+										<Name>ID</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>Int32</InstanceTypeName>
+										<InstanceTypeNameSpace>System</InstanceTypeNameSpace>
+										<InstanceTypeFullName>System.Int32</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>1</ParamNumber>
+										<InstancePaths />
+										<InstanceID>224ded40-dc2c-47c5-a2f5-32cde8e90b31</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</InstanceNode>
+								</NestedInstances>
+								<ConstructorParameters />
+								<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+								<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+								<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<ParamNumber>0</ParamNumber>
+								<InstancePaths />
+								<InstanceID>a359a500-4e8c-467c-b075-7bbdb7823533</InstanceID>
+								<IsArray>false</IsArray>
+								<ElementTypeName />
+							</InstanceNode>
+						</NestedInstances>
+						<ConstructorParameters />
+						<Value />
+						<CfgKey />
+						<IsEntity>false</IsEntity>
+						<ParamNumber>0</ParamNumber>
+						<InstancePaths>
+							<InstancePath>
+								<Path>bde.ID</Path>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<Node>
+									<Name>ID</Name>
+									<NestedInstances />
+									<ConstructorParameters />
+									<InstanceTypeName>Int32</InstanceTypeName>
+									<InstanceTypeNameSpace>System</InstanceTypeNameSpace>
+									<InstanceTypeFullName>System.Int32</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>1</ParamNumber>
+									<InstancePaths />
+									<InstanceID>224ded40-dc2c-47c5-a2f5-32cde8e90b31</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</Node>
+								<InstanceID>224ded40-dc2c-47c5-a2f5-32cde8e90b31</InstanceID>
+								<ParamNumber>1</ParamNumber>
+							</InstancePath>
+						</InstancePaths>
+						<InstanceID>67ac0453-bd63-437c-a36e-56885a5113e2</InstanceID>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</MethodParams>
+					<IsArray>false</IsArray>
+					<ElementTypeName />
+				</ReadItemMethod>
+				<UpdateMethod>
+					<MethodType>Update</MethodType>
+					<Include>true</Include>
+					<MethodName>AddMountainBikeComplex</MethodName>
+					<ReturnTypeName>MountainBike</ReturnTypeName>
+					<ReturnTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</ReturnTypeFullName>
+					<ReturnObject>
+						<Name>Root</Name>
+						<NestedInstances>
+							<InstanceNode>
+								<Name>BusinessDataEntity</Name>
+								<NestedInstances>
+									<InstanceNode>
+										<Name>Bike</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>MountainBike</InstanceTypeName>
+										<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+										<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>0</ParamNumber>
+										<InstancePaths />
+										<InstanceID>643436a2-89cb-41ec-b8d3-4ca8f05894ff</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</InstanceNode>
+								</NestedInstances>
+								<ConstructorParameters />
+								<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+								<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+								<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<ParamNumber>0</ParamNumber>
+								<InstancePaths />
+								<InstanceID>6629c30f-ea21-425a-b760-d9fb00c69706</InstanceID>
+								<IsArray>false</IsArray>
+								<ElementTypeName />
+							</InstanceNode>
+						</NestedInstances>
+						<ConstructorParameters />
+						<Value />
+						<CfgKey />
+						<IsEntity>false</IsEntity>
+						<ParamNumber>0</ParamNumber>
+						<InstancePaths>
+							<InstancePath>
+								<Path>BusinessDataEntity.Bike</Path>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<Node>
+									<Name>Bike</Name>
+									<NestedInstances />
+									<ConstructorParameters />
+									<InstanceTypeName>MountainBike</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>0</ParamNumber>
+									<InstancePaths />
+									<InstanceID>643436a2-89cb-41ec-b8d3-4ca8f05894ff</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</Node>
+								<InstanceID>643436a2-89cb-41ec-b8d3-4ca8f05894ff</InstanceID>
+								<ParamNumber>0</ParamNumber>
+							</InstancePath>
+						</InstancePaths>
+						<InstanceID>58e4c99e-a2c8-47cd-97f4-6b0572c29bcb</InstanceID>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</ReturnObject>
+					<MethodParams>
+						<Name>Root</Name>
+						<NestedInstances>
+							<InstanceNode>
+								<Name>bde</Name>
+								<NestedInstances>
+									<InstanceNode>
+										<Name>Bike</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>MountainBike</InstanceTypeName>
+										<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+										<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>1</ParamNumber>
+										<InstancePaths />
+										<InstanceID>c8c38de9-fcc5-468a-95eb-22a36d24656a</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</InstanceNode>
+								</NestedInstances>
+								<ConstructorParameters />
+								<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+								<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+								<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<ParamNumber>0</ParamNumber>
+								<InstancePaths />
+								<InstanceID>e9628455-1083-40b5-8ad6-d2bcf2cec7a1</InstanceID>
+								<IsArray>false</IsArray>
+								<ElementTypeName />
+							</InstanceNode>
+						</NestedInstances>
+						<ConstructorParameters />
+						<Value />
+						<CfgKey />
+						<IsEntity>false</IsEntity>
+						<ParamNumber>0</ParamNumber>
+						<InstancePaths>
+							<InstancePath>
+								<Path>bde.Bike</Path>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<Node>
+									<Name>Bike</Name>
+									<NestedInstances />
+									<ConstructorParameters />
+									<InstanceTypeName>MountainBike</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>1</ParamNumber>
+									<InstancePaths />
+									<InstanceID>c8c38de9-fcc5-468a-95eb-22a36d24656a</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</Node>
+								<InstanceID>c8c38de9-fcc5-468a-95eb-22a36d24656a</InstanceID>
+								<ParamNumber>1</ParamNumber>
+							</InstancePath>
+						</InstancePaths>
+						<InstanceID>32d63ad9-e352-4295-a483-feea6bc787b0</InstanceID>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</MethodParams>
+					<IsArray>false</IsArray>
+					<ElementTypeName />
+				</UpdateMethod>
+				<CreateMethod>
+					<MethodType>Create</MethodType>
+					<Include>true</Include>
+					<MethodName>AddMountainBikeComplex</MethodName>
+					<ReturnTypeName>MountainBike</ReturnTypeName>
+					<ReturnTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</ReturnTypeFullName>
+					<ReturnObject>
+						<Name>Root</Name>
+						<NestedInstances>
+							<InstanceNode>
+								<Name>BusinessDataEntity</Name>
+								<NestedInstances>
+									<InstanceNode>
+										<Name>Bike</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>MountainBike</InstanceTypeName>
+										<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+										<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>0</ParamNumber>
+										<InstancePaths />
+										<InstanceID>8d029f08-889d-4f4f-9812-f609b93cf340</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</InstanceNode>
+								</NestedInstances>
+								<ConstructorParameters />
+								<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+								<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+								<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<ParamNumber>0</ParamNumber>
+								<InstancePaths />
+								<InstanceID>049ee5f7-fab5-45e1-b0a5-0f3124577ad1</InstanceID>
+								<IsArray>false</IsArray>
+								<ElementTypeName />
+							</InstanceNode>
+						</NestedInstances>
+						<ConstructorParameters />
+						<Value />
+						<CfgKey />
+						<IsEntity>false</IsEntity>
+						<ParamNumber>0</ParamNumber>
+						<InstancePaths>
+							<InstancePath>
+								<Path>BusinessDataEntity.Bike</Path>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<Node>
+									<Name>Bike</Name>
+									<NestedInstances />
+									<ConstructorParameters />
+									<InstanceTypeName>MountainBike</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>0</ParamNumber>
+									<InstancePaths />
+									<InstanceID>8d029f08-889d-4f4f-9812-f609b93cf340</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</Node>
+								<InstanceID>8d029f08-889d-4f4f-9812-f609b93cf340</InstanceID>
+								<ParamNumber>0</ParamNumber>
+							</InstancePath>
+						</InstancePaths>
+						<InstanceID>3476488e-60d3-46f4-8968-3adedf5d32a1</InstanceID>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</ReturnObject>
+					<MethodParams>
+						<Name>Root</Name>
+						<NestedInstances>
+							<InstanceNode>
+								<Name>bde</Name>
+								<NestedInstances>
+									<InstanceNode>
+										<Name>Bike</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>MountainBike</InstanceTypeName>
+										<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+										<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>1</ParamNumber>
+										<InstancePaths />
+										<InstanceID>47a673dd-f3ee-404b-80cb-8a4d8b41d502</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</InstanceNode>
+								</NestedInstances>
+								<ConstructorParameters />
+								<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+								<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+								<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<ParamNumber>0</ParamNumber>
+								<InstancePaths />
+								<InstanceID>f0fcb592-af72-41c5-b7da-c6137ac2d5a4</InstanceID>
+								<IsArray>false</IsArray>
+								<ElementTypeName />
+							</InstanceNode>
+						</NestedInstances>
+						<ConstructorParameters />
+						<Value />
+						<CfgKey />
+						<IsEntity>false</IsEntity>
+						<ParamNumber>0</ParamNumber>
+						<InstancePaths>
+							<InstancePath>
+								<Path>bde.Bike</Path>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<Node>
+									<Name>Bike</Name>
+									<NestedInstances />
+									<ConstructorParameters />
+									<InstanceTypeName>MountainBike</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>1</ParamNumber>
+									<InstancePaths />
+									<InstanceID>47a673dd-f3ee-404b-80cb-8a4d8b41d502</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</Node>
+								<InstanceID>47a673dd-f3ee-404b-80cb-8a4d8b41d502</InstanceID>
+								<ParamNumber>1</ParamNumber>
+							</InstancePath>
+						</InstancePaths>
+						<InstanceID>9588f7e6-355e-4af9-952d-4832d9851e7a</InstanceID>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</MethodParams>
+					<IsArray>false</IsArray>
+					<ElementTypeName />
+				</CreateMethod>
+				<DeleteMethod>
+					<MethodType>Delete</MethodType>
+					<Include>true</Include>
+					<MethodName>DeleteMountainBikeComplex</MethodName>
+					<ReturnTypeName />
+					<MethodParams>
+						<Name>Root</Name>
+						<NestedInstances>
+							<InstanceNode>
+								<Name>bde</Name>
+								<NestedInstances>
+									<InstanceNode>
+										<Name>ID</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>Int32</InstanceTypeName>
+										<InstanceTypeNameSpace>System</InstanceTypeNameSpace>
+										<InstanceTypeFullName>System.Int32</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>1</ParamNumber>
+										<InstancePaths />
+										<InstanceID>ec7c47bd-44eb-44a2-b898-224b032728e2</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</InstanceNode>
+								</NestedInstances>
+								<ConstructorParameters />
+								<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+								<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+								<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<ParamNumber>0</ParamNumber>
+								<InstancePaths />
+								<InstanceID>a114fee0-2a91-426e-b937-4834d75ff76c</InstanceID>
+								<IsArray>false</IsArray>
+								<ElementTypeName />
+							</InstanceNode>
+						</NestedInstances>
+						<ConstructorParameters />
+						<Value />
+						<CfgKey />
+						<IsEntity>false</IsEntity>
+						<ParamNumber>0</ParamNumber>
+						<InstancePaths>
+							<InstancePath>
+								<Path>bde.ID</Path>
+								<Value />
+								<CfgKey />
+								<IsEntity>false</IsEntity>
+								<Node>
+									<Name>ID</Name>
+									<NestedInstances />
+									<ConstructorParameters />
+									<InstanceTypeName>Int32</InstanceTypeName>
+									<InstanceTypeNameSpace>System</InstanceTypeNameSpace>
+									<InstanceTypeFullName>System.Int32</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>1</ParamNumber>
+									<InstancePaths />
+									<InstanceID>ec7c47bd-44eb-44a2-b898-224b032728e2</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</Node>
+								<InstanceID>ec7c47bd-44eb-44a2-b898-224b032728e2</InstanceID>
+								<ParamNumber>1</ParamNumber>
+							</InstancePath>
+						</InstancePaths>
+						<InstanceID>d3d96b1b-2fce-4442-8135-6ecf1bdf406e</InstanceID>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</MethodParams>
+					<IsArray>false</IsArray>
+					<ElementTypeName />
+				</DeleteMethod>
+				<MethodDetailsList>
+					<MethodDetails>
+						<MethodType>Read List</MethodType>
+						<Include>true</Include>
+						<MethodName>GetMountainBikesComplex</MethodName>
+						<ReturnTypeName>MountainBike[]</ReturnTypeName>
+						<ReturnTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike[]</ReturnTypeFullName>
+						<ReturnObject>
+							<Name>Root</Name>
+							<NestedInstances>
+								<InstanceNode>
+									<Name>BusinessDataEntity</Name>
+									<NestedInstances>
+										<InstanceNode>
+											<Name>Bikes</Name>
+											<NestedInstances />
+											<ConstructorParameters />
+											<InstanceTypeName>MountainBike[]</InstanceTypeName>
+											<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+											<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike[]</InstanceTypeFullName>
+											<Value />
+											<CfgKey />
+											<IsEntity>false</IsEntity>
+											<ParamNumber>0</ParamNumber>
+											<InstancePaths />
+											<InstanceID>991b1ca8-f81e-4571-8519-fedba9d86c56</InstanceID>
+											<IsArray>true</IsArray>
+											<ElementTypeName>MountainBike</ElementTypeName>
+										</InstanceNode>
+									</NestedInstances>
+									<ConstructorParameters />
+									<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>0</ParamNumber>
+									<InstancePaths />
+									<InstanceID>0800a380-c47f-4f91-8553-c53eee42eb8e</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</InstanceNode>
+							</NestedInstances>
+							<ConstructorParameters />
+							<Value />
+							<CfgKey />
+							<IsEntity>false</IsEntity>
+							<ParamNumber>0</ParamNumber>
+							<InstancePaths>
+								<InstancePath>
+									<Path>BusinessDataEntity.Bikes</Path>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<Node>
+										<Name>Bikes</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>MountainBike[]</InstanceTypeName>
+										<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+										<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike[]</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>0</ParamNumber>
+										<InstancePaths />
+										<InstanceID>991b1ca8-f81e-4571-8519-fedba9d86c56</InstanceID>
+										<IsArray>true</IsArray>
+										<ElementTypeName>MountainBike</ElementTypeName>
+									</Node>
+									<InstanceID>991b1ca8-f81e-4571-8519-fedba9d86c56</InstanceID>
+									<ParamNumber>0</ParamNumber>
+								</InstancePath>
+							</InstancePaths>
+							<InstanceID>8bd62267-f293-4b86-960b-58365860eea5</InstanceID>
+							<IsArray>false</IsArray>
+							<ElementTypeName />
+						</ReturnObject>
+						<IsArray>true</IsArray>
+						<ElementTypeName>MountainBike</ElementTypeName>
+					</MethodDetails>
+					<MethodDetails>
+						<MethodType>Read Item</MethodType>
+						<Include>true</Include>
+						<MethodName>GetMountainBikeComplex</MethodName>
+						<ReturnTypeName>MountainBike</ReturnTypeName>
+						<ReturnTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</ReturnTypeFullName>
+						<ReturnObject>
+							<Name>Root</Name>
+							<NestedInstances>
+								<InstanceNode>
+									<Name>BusinessDataEntity</Name>
+									<NestedInstances>
+										<InstanceNode>
+											<Name>Bike</Name>
+											<NestedInstances />
+											<ConstructorParameters />
+											<InstanceTypeName>MountainBike</InstanceTypeName>
+											<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+											<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+											<Value />
+											<CfgKey />
+											<IsEntity>false</IsEntity>
+											<ParamNumber>0</ParamNumber>
+											<InstancePaths />
+											<InstanceID>9b7c0380-061c-4a69-9157-114426219933</InstanceID>
+											<IsArray>false</IsArray>
+											<ElementTypeName />
+										</InstanceNode>
+									</NestedInstances>
+									<ConstructorParameters />
+									<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>0</ParamNumber>
+									<InstancePaths />
+									<InstanceID>f14b2203-ba74-4d0f-bbf4-1434bf24ce07</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</InstanceNode>
+							</NestedInstances>
+							<ConstructorParameters />
+							<Value />
+							<CfgKey />
+							<IsEntity>false</IsEntity>
+							<ParamNumber>0</ParamNumber>
+							<InstancePaths>
+								<InstancePath>
+									<Path>BusinessDataEntity.Bike</Path>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<Node>
+										<Name>Bike</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>MountainBike</InstanceTypeName>
+										<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+										<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>0</ParamNumber>
+										<InstancePaths />
+										<InstanceID>9b7c0380-061c-4a69-9157-114426219933</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</Node>
+									<InstanceID>9b7c0380-061c-4a69-9157-114426219933</InstanceID>
+									<ParamNumber>0</ParamNumber>
+								</InstancePath>
+							</InstancePaths>
+							<InstanceID>653094c5-73d4-4ebd-a38d-ee76d859c626</InstanceID>
+							<IsArray>false</IsArray>
+							<ElementTypeName />
+						</ReturnObject>
+						<MethodParams>
+							<Name>Root</Name>
+							<NestedInstances>
+								<InstanceNode>
+									<Name>bde</Name>
+									<NestedInstances>
+										<InstanceNode>
+											<Name>ID</Name>
+											<NestedInstances />
+											<ConstructorParameters />
+											<InstanceTypeName>Int32</InstanceTypeName>
+											<InstanceTypeNameSpace>System</InstanceTypeNameSpace>
+											<InstanceTypeFullName>System.Int32</InstanceTypeFullName>
+											<Value />
+											<CfgKey />
+											<IsEntity>false</IsEntity>
+											<ParamNumber>1</ParamNumber>
+											<InstancePaths />
+											<InstanceID>224ded40-dc2c-47c5-a2f5-32cde8e90b31</InstanceID>
+											<IsArray>false</IsArray>
+											<ElementTypeName />
+										</InstanceNode>
+									</NestedInstances>
+									<ConstructorParameters />
+									<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>0</ParamNumber>
+									<InstancePaths />
+									<InstanceID>a359a500-4e8c-467c-b075-7bbdb7823533</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</InstanceNode>
+							</NestedInstances>
+							<ConstructorParameters />
+							<Value />
+							<CfgKey />
+							<IsEntity>false</IsEntity>
+							<ParamNumber>0</ParamNumber>
+							<InstancePaths>
+								<InstancePath>
+									<Path>bde.ID</Path>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<Node>
+										<Name>ID</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>Int32</InstanceTypeName>
+										<InstanceTypeNameSpace>System</InstanceTypeNameSpace>
+										<InstanceTypeFullName>System.Int32</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>1</ParamNumber>
+										<InstancePaths />
+										<InstanceID>224ded40-dc2c-47c5-a2f5-32cde8e90b31</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</Node>
+									<InstanceID>224ded40-dc2c-47c5-a2f5-32cde8e90b31</InstanceID>
+									<ParamNumber>1</ParamNumber>
+								</InstancePath>
+							</InstancePaths>
+							<InstanceID>67ac0453-bd63-437c-a36e-56885a5113e2</InstanceID>
+							<IsArray>false</IsArray>
+							<ElementTypeName />
+						</MethodParams>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</MethodDetails>
+					<MethodDetails>
+						<MethodType>Update</MethodType>
+						<Include>true</Include>
+						<MethodName>AddMountainBikeComplex</MethodName>
+						<ReturnTypeName>MountainBike</ReturnTypeName>
+						<ReturnTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</ReturnTypeFullName>
+						<ReturnObject>
+							<Name>Root</Name>
+							<NestedInstances>
+								<InstanceNode>
+									<Name>BusinessDataEntity</Name>
+									<NestedInstances>
+										<InstanceNode>
+											<Name>Bike</Name>
+											<NestedInstances />
+											<ConstructorParameters />
+											<InstanceTypeName>MountainBike</InstanceTypeName>
+											<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+											<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+											<Value />
+											<CfgKey />
+											<IsEntity>false</IsEntity>
+											<ParamNumber>0</ParamNumber>
+											<InstancePaths />
+											<InstanceID>643436a2-89cb-41ec-b8d3-4ca8f05894ff</InstanceID>
+											<IsArray>false</IsArray>
+											<ElementTypeName />
+										</InstanceNode>
+									</NestedInstances>
+									<ConstructorParameters />
+									<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>0</ParamNumber>
+									<InstancePaths />
+									<InstanceID>6629c30f-ea21-425a-b760-d9fb00c69706</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</InstanceNode>
+							</NestedInstances>
+							<ConstructorParameters />
+							<Value />
+							<CfgKey />
+							<IsEntity>false</IsEntity>
+							<ParamNumber>0</ParamNumber>
+							<InstancePaths>
+								<InstancePath>
+									<Path>BusinessDataEntity.Bike</Path>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<Node>
+										<Name>Bike</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>MountainBike</InstanceTypeName>
+										<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+										<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>0</ParamNumber>
+										<InstancePaths />
+										<InstanceID>643436a2-89cb-41ec-b8d3-4ca8f05894ff</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</Node>
+									<InstanceID>643436a2-89cb-41ec-b8d3-4ca8f05894ff</InstanceID>
+									<ParamNumber>0</ParamNumber>
+								</InstancePath>
+							</InstancePaths>
+							<InstanceID>58e4c99e-a2c8-47cd-97f4-6b0572c29bcb</InstanceID>
+							<IsArray>false</IsArray>
+							<ElementTypeName />
+						</ReturnObject>
+						<MethodParams>
+							<Name>Root</Name>
+							<NestedInstances>
+								<InstanceNode>
+									<Name>bde</Name>
+									<NestedInstances>
+										<InstanceNode>
+											<Name>Bike</Name>
+											<NestedInstances />
+											<ConstructorParameters />
+											<InstanceTypeName>MountainBike</InstanceTypeName>
+											<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+											<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+											<Value />
+											<CfgKey />
+											<IsEntity>false</IsEntity>
+											<ParamNumber>1</ParamNumber>
+											<InstancePaths />
+											<InstanceID>c8c38de9-fcc5-468a-95eb-22a36d24656a</InstanceID>
+											<IsArray>false</IsArray>
+											<ElementTypeName />
+										</InstanceNode>
+									</NestedInstances>
+									<ConstructorParameters />
+									<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>0</ParamNumber>
+									<InstancePaths />
+									<InstanceID>e9628455-1083-40b5-8ad6-d2bcf2cec7a1</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</InstanceNode>
+							</NestedInstances>
+							<ConstructorParameters />
+							<Value />
+							<CfgKey />
+							<IsEntity>false</IsEntity>
+							<ParamNumber>0</ParamNumber>
+							<InstancePaths>
+								<InstancePath>
+									<Path>bde.Bike</Path>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<Node>
+										<Name>Bike</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>MountainBike</InstanceTypeName>
+										<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+										<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>1</ParamNumber>
+										<InstancePaths />
+										<InstanceID>c8c38de9-fcc5-468a-95eb-22a36d24656a</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</Node>
+									<InstanceID>c8c38de9-fcc5-468a-95eb-22a36d24656a</InstanceID>
+									<ParamNumber>1</ParamNumber>
+								</InstancePath>
+							</InstancePaths>
+							<InstanceID>32d63ad9-e352-4295-a483-feea6bc787b0</InstanceID>
+							<IsArray>false</IsArray>
+							<ElementTypeName />
+						</MethodParams>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</MethodDetails>
+					<MethodDetails>
+						<MethodType>Create</MethodType>
+						<Include>true</Include>
+						<MethodName>AddMountainBikeComplex</MethodName>
+						<ReturnTypeName>MountainBike</ReturnTypeName>
+						<ReturnTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</ReturnTypeFullName>
+						<ReturnObject>
+							<Name>Root</Name>
+							<NestedInstances>
+								<InstanceNode>
+									<Name>BusinessDataEntity</Name>
+									<NestedInstances>
+										<InstanceNode>
+											<Name>Bike</Name>
+											<NestedInstances />
+											<ConstructorParameters />
+											<InstanceTypeName>MountainBike</InstanceTypeName>
+											<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+											<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+											<Value />
+											<CfgKey />
+											<IsEntity>false</IsEntity>
+											<ParamNumber>0</ParamNumber>
+											<InstancePaths />
+											<InstanceID>8d029f08-889d-4f4f-9812-f609b93cf340</InstanceID>
+											<IsArray>false</IsArray>
+											<ElementTypeName />
+										</InstanceNode>
+									</NestedInstances>
+									<ConstructorParameters />
+									<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>0</ParamNumber>
+									<InstancePaths />
+									<InstanceID>049ee5f7-fab5-45e1-b0a5-0f3124577ad1</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</InstanceNode>
+							</NestedInstances>
+							<ConstructorParameters />
+							<Value />
+							<CfgKey />
+							<IsEntity>false</IsEntity>
+							<ParamNumber>0</ParamNumber>
+							<InstancePaths>
+								<InstancePath>
+									<Path>BusinessDataEntity.Bike</Path>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<Node>
+										<Name>Bike</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>MountainBike</InstanceTypeName>
+										<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+										<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>0</ParamNumber>
+										<InstancePaths />
+										<InstanceID>8d029f08-889d-4f4f-9812-f609b93cf340</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</Node>
+									<InstanceID>8d029f08-889d-4f4f-9812-f609b93cf340</InstanceID>
+									<ParamNumber>0</ParamNumber>
+								</InstancePath>
+							</InstancePaths>
+							<InstanceID>3476488e-60d3-46f4-8968-3adedf5d32a1</InstanceID>
+							<IsArray>false</IsArray>
+							<ElementTypeName />
+						</ReturnObject>
+						<MethodParams>
+							<Name>Root</Name>
+							<NestedInstances>
+								<InstanceNode>
+									<Name>bde</Name>
+									<NestedInstances>
+										<InstanceNode>
+											<Name>Bike</Name>
+											<NestedInstances />
+											<ConstructorParameters />
+											<InstanceTypeName>MountainBike</InstanceTypeName>
+											<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+											<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+											<Value />
+											<CfgKey />
+											<IsEntity>false</IsEntity>
+											<ParamNumber>1</ParamNumber>
+											<InstancePaths />
+											<InstanceID>47a673dd-f3ee-404b-80cb-8a4d8b41d502</InstanceID>
+											<IsArray>false</IsArray>
+											<ElementTypeName />
+										</InstanceNode>
+									</NestedInstances>
+									<ConstructorParameters />
+									<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>0</ParamNumber>
+									<InstancePaths />
+									<InstanceID>f0fcb592-af72-41c5-b7da-c6137ac2d5a4</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</InstanceNode>
+							</NestedInstances>
+							<ConstructorParameters />
+							<Value />
+							<CfgKey />
+							<IsEntity>false</IsEntity>
+							<ParamNumber>0</ParamNumber>
+							<InstancePaths>
+								<InstancePath>
+									<Path>bde.Bike</Path>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<Node>
+										<Name>Bike</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>MountainBike</InstanceTypeName>
+										<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+										<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.MountainBike</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>1</ParamNumber>
+										<InstancePaths />
+										<InstanceID>47a673dd-f3ee-404b-80cb-8a4d8b41d502</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</Node>
+									<InstanceID>47a673dd-f3ee-404b-80cb-8a4d8b41d502</InstanceID>
+									<ParamNumber>1</ParamNumber>
+								</InstancePath>
+							</InstancePaths>
+							<InstanceID>9588f7e6-355e-4af9-952d-4832d9851e7a</InstanceID>
+							<IsArray>false</IsArray>
+							<ElementTypeName />
+						</MethodParams>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</MethodDetails>
+					<MethodDetails>
+						<MethodType>Delete</MethodType>
+						<Include>true</Include>
+						<MethodName>DeleteMountainBikeComplex</MethodName>
+						<ReturnTypeName />
+						<MethodParams>
+							<Name>Root</Name>
+							<NestedInstances>
+								<InstanceNode>
+									<Name>bde</Name>
+									<NestedInstances>
+										<InstanceNode>
+											<Name>ID</Name>
+											<NestedInstances />
+											<ConstructorParameters />
+											<InstanceTypeName>Int32</InstanceTypeName>
+											<InstanceTypeNameSpace>System</InstanceTypeNameSpace>
+											<InstanceTypeFullName>System.Int32</InstanceTypeFullName>
+											<Value />
+											<CfgKey />
+											<IsEntity>false</IsEntity>
+											<ParamNumber>1</ParamNumber>
+											<InstancePaths />
+											<InstanceID>ec7c47bd-44eb-44a2-b898-224b032728e2</InstanceID>
+											<IsArray>false</IsArray>
+											<ElementTypeName />
+										</InstanceNode>
+									</NestedInstances>
+									<ConstructorParameters />
+									<InstanceTypeName>BusinessDataEntity</InstanceTypeName>
+									<InstanceTypeNameSpace>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference</InstanceTypeNameSpace>
+									<InstanceTypeFullName>WebberCross.BdcModelBuilder.ServiceShim.WCFBikeServiceReference.BusinessDataEntity</InstanceTypeFullName>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<ParamNumber>0</ParamNumber>
+									<InstancePaths />
+									<InstanceID>a114fee0-2a91-426e-b937-4834d75ff76c</InstanceID>
+									<IsArray>false</IsArray>
+									<ElementTypeName />
+								</InstanceNode>
+							</NestedInstances>
+							<ConstructorParameters />
+							<Value />
+							<CfgKey />
+							<IsEntity>false</IsEntity>
+							<ParamNumber>0</ParamNumber>
+							<InstancePaths>
+								<InstancePath>
+									<Path>bde.ID</Path>
+									<Value />
+									<CfgKey />
+									<IsEntity>false</IsEntity>
+									<Node>
+										<Name>ID</Name>
+										<NestedInstances />
+										<ConstructorParameters />
+										<InstanceTypeName>Int32</InstanceTypeName>
+										<InstanceTypeNameSpace>System</InstanceTypeNameSpace>
+										<InstanceTypeFullName>System.Int32</InstanceTypeFullName>
+										<Value />
+										<CfgKey />
+										<IsEntity>false</IsEntity>
+										<ParamNumber>1</ParamNumber>
+										<InstancePaths />
+										<InstanceID>ec7c47bd-44eb-44a2-b898-224b032728e2</InstanceID>
+										<IsArray>false</IsArray>
+										<ElementTypeName />
+									</Node>
+									<InstanceID>ec7c47bd-44eb-44a2-b898-224b032728e2</InstanceID>
+									<ParamNumber>1</ParamNumber>
+								</InstancePath>
+							</InstancePaths>
+							<InstanceID>d3d96b1b-2fce-4442-8135-6ecf1bdf406e</InstanceID>
+							<IsArray>false</IsArray>
+							<ElementTypeName />
+						</MethodParams>
+						<IsArray>false</IsArray>
+						<ElementTypeName />
+					</MethodDetails>
+				</MethodDetailsList>
+			</Methods>
+		</Model>
+	</Models>
+	<OpPath>C:\Data\CodePlex\BdcModelBuilder\Template\BdcModelTemplate</OpPath>
+	<TargetNameSpace>WebberCross.BdcModelBuilder.BdcModelTemplate</TargetNameSpace>
+</ModelContainer>
