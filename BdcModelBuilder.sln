@@ -1,6 +1,23 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CD250E4-8168-48B5-BE6B-706CEFA67F24}"
+	ProjectSection(SolutionItems) = preProject
+		BdcModelBuilder.vsmdi = BdcModelBuilder.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{935A6609-BD4C-4DDA-882C-BAC281F495EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{10FFBDC2-F39C-4A95-AB51-0C421A23E8B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharePoint", "SharePoint", "{0923CC5D-BE2D-4CE1-A099-EE834DAB5B4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{197EAD1B-068F-4D10-8ABF-191C250F4AE6}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BdcModelBuilder", "BdcModelBuilder\BdcModelBuilder.csproj", "{7FE74782-4B5E-454A-8536-F7A11A5AA090}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfBikeService", "WcfService\WcfBikeService.csproj", "{6FE73096-C1C6-4774-8398-6162198CCC08}"
@@ -8,13 +25,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "WcfServiceTest\Tests.csproj", "{53E98408-39C8-47CC-B144-7B9775485E43}"
 	ProjectSection(ProjectDependencies) = postProject
 		{6FE73096-C1C6-4774-8398-6162198CCC08} = {6FE73096-C1C6-4774-8398-6162198CCC08}
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CD250E4-8168-48B5-BE6B-706CEFA67F24}"
-	ProjectSection(SolutionItems) = preProject
-		BdcModelBuilder.vsmdi = BdcModelBuilder.vsmdi
-		Local.testsettings = Local.testsettings
-		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BdcModelDemo", "BdcModelDemo\BdcModelDemo.csproj", "{79C448F8-372A-48E1-A209-70538FA43A87}"
@@ -26,54 +36,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceShim", "ServiceShim\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASMXBikeService", "ASMXService\ASMXBikeService.csproj", "{B3B36581-7A48-4EB5-A5D7-9ACDD0BCDC51}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{935A6609-BD4C-4DDA-882C-BAC281F495EC}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{10FFBDC2-F39C-4A95-AB51-0C421A23E8B4}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharePoint", "SharePoint", "{0923CC5D-BE2D-4CE1-A099-EE834DAB5B4A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{197EAD1B-068F-4D10-8ABF-191C250F4AE6}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BdcModelBuilderInstaller", "BdcModelBuilderInstaller\BdcModelBuilderInstaller.vdproj", "{1FD13DF4-E962-42F3-9155-B4BC8EC6E9B4}"
-EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 8
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs26
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ASMXService\\ASMXBikeService.csproj
-		SccProjectTopLevelParentUniqueName1 = BdcModelBuilder.sln
-		SccProjectName1 = ASMXService
-		SccLocalPath1 = ASMXService
-		SccProjectUniqueName2 = BdcModelBuilder\\BdcModelBuilder.csproj
-		SccProjectTopLevelParentUniqueName2 = BdcModelBuilder.sln
-		SccProjectName2 = BdcModelBuilder
-		SccLocalPath2 = BdcModelBuilder
-		SccProjectUniqueName3 = BdcModelDemo\\BdcModelDemo.csproj
-		SccProjectTopLevelParentUniqueName3 = BdcModelBuilder.sln
-		SccProjectName3 = BdcModelDemo
-		SccLocalPath3 = BdcModelDemo
-		SccProjectUniqueName4 = ServiceShim\\ServiceShim.csproj
-		SccProjectTopLevelParentUniqueName4 = BdcModelBuilder.sln
-		SccProjectName4 = ServiceShim
-		SccLocalPath4 = ServiceShim
-		SccProjectUniqueName5 = WcfService\\WcfBikeService.csproj
-		SccProjectTopLevelParentUniqueName5 = BdcModelBuilder.sln
-		SccProjectName5 = WcfService
-		SccLocalPath5 = WcfService
-		SccProjectUniqueName6 = WcfServiceTest\\Tests.csproj
-		SccProjectTopLevelParentUniqueName6 = BdcModelBuilder.sln
-		SccProjectName6 = WcfServiceTest
-		SccLocalPath6 = WcfServiceTest
-		SccProjectUniqueName7 = BdcModelBuilderInstaller\\BdcModelBuilderInstaller.vdproj
-		SccProjectTopLevelParentUniqueName7 = BdcModelBuilder.sln
-		SccProjectName7 = BdcModelBuilderInstaller
-		SccLocalPath7 = BdcModelBuilderInstaller
-	EndGlobalSection
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = BdcModelBuilder.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -147,23 +110,19 @@ Global
 		{B3B36581-7A48-4EB5-A5D7-9ACDD0BCDC51}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B3B36581-7A48-4EB5-A5D7-9ACDD0BCDC51}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B3B36581-7A48-4EB5-A5D7-9ACDD0BCDC51}.Release|x86.ActiveCfg = Release|Any CPU
-		{1FD13DF4-E962-42F3-9155-B4BC8EC6E9B4}.Debug|Any CPU.ActiveCfg = Debug
-		{1FD13DF4-E962-42F3-9155-B4BC8EC6E9B4}.Debug|Mixed Platforms.ActiveCfg = Debug
-		{1FD13DF4-E962-42F3-9155-B4BC8EC6E9B4}.Debug|x86.ActiveCfg = Debug
-		{1FD13DF4-E962-42F3-9155-B4BC8EC6E9B4}.Release|Any CPU.ActiveCfg = Release
-		{1FD13DF4-E962-42F3-9155-B4BC8EC6E9B4}.Release|Mixed Platforms.ActiveCfg = Release
-		{1FD13DF4-E962-42F3-9155-B4BC8EC6E9B4}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7FE74782-4B5E-454A-8536-F7A11A5AA090} = {10FFBDC2-F39C-4A95-AB51-0C421A23E8B4}
-		{1FD13DF4-E962-42F3-9155-B4BC8EC6E9B4} = {10FFBDC2-F39C-4A95-AB51-0C421A23E8B4}
-		{B3B36581-7A48-4EB5-A5D7-9ACDD0BCDC51} = {935A6609-BD4C-4DDA-882C-BAC281F495EC}
 		{6FE73096-C1C6-4774-8398-6162198CCC08} = {935A6609-BD4C-4DDA-882C-BAC281F495EC}
 		{53E98408-39C8-47CC-B144-7B9775485E43} = {197EAD1B-068F-4D10-8ABF-191C250F4AE6}
-		{896ED505-54D8-42FF-81AC-C63CFEF2B02C} = {0923CC5D-BE2D-4CE1-A099-EE834DAB5B4A}
 		{79C448F8-372A-48E1-A209-70538FA43A87} = {0923CC5D-BE2D-4CE1-A099-EE834DAB5B4A}
+		{896ED505-54D8-42FF-81AC-C63CFEF2B02C} = {0923CC5D-BE2D-4CE1-A099-EE834DAB5B4A}
+		{B3B36581-7A48-4EB5-A5D7-9ACDD0BCDC51} = {935A6609-BD4C-4DDA-882C-BAC281F495EC}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = BdcModelBuilder.vsmdi
 	EndGlobalSection
 EndGlobal

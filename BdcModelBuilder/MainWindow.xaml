@@ -1,4 +1,4 @@
-﻿<!-- 
+﻿<!--
 // (c) Copyright Webber-Cross Software Ltd.
 // This source is subject to the Microsoft Public License (Ms-PL).
 // Please see http://go.microsoft.com/fwlink/?LinkID=131993 for details.
@@ -9,8 +9,8 @@
         xmlns:vw="clr-namespace:WebberCross.BdcModelBuilder.TabControls"  x:Class="WebberCross.BdcModelBuilder.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="SharePoint 2010 Bdc Model Builder" Height="500" Width="600" Icon="/WebberCross.BdcModelBuilder;component/gear.ico">
-    
+        Title="SharePoint Bdc Model Builder" Height="500" Width="600" Icon="/WebberCross.BdcModelBuilder;component/gear.ico">
+
     <Window.InputBindings>
         <KeyBinding Key="S" Modifiers="Control" Command="{Binding SaveCommand}"/>
         <KeyBinding Key="E" Modifiers="Control" Command="{Binding EditCommand}"/>
@@ -25,11 +25,11 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="30" />
         </Grid.RowDefinitions>
-        
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        
+
         <Menu VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Row="0">
             <MenuItem Header="File">
                 <MenuItem Header="New" Command="{Binding NewFileCommand}" />
@@ -81,7 +81,7 @@
                 <ListBox VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ItemsSource="{Binding Path=ServiceCode}" />
             </TabItem>
         </TabControl>
-        
+
         <StatusBar x:Name="statusBar" Grid.Row="2">
             <StatusBarItem>
                 <TextBlock x:Name="label" Text="Current Model: " />
@@ -90,6 +90,6 @@
                 <TextBlock x:Name="sslModel" Text="{Binding Path=ModelContainer.CurrentModel.Name}" />
             </StatusBarItem>
         </StatusBar>
-        
+
     </Grid>
 </Window>

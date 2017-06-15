@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2f74f048-d656-44de-9edb-afc5991e10b4" solutionId="2f74f048-d656-44de-9edb-afc5991e10b4" resetWebServer="false" name="BdcModelDemo" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2f74f048-d656-44de-9edb-afc5991e10b4" solutionId="2f74f048-d656-44de-9edb-afc5991e10b4" resetWebServer="false" sharePointProductVersion="15.0" name="BdcModelDemo" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <assemblies>
     <projectOutputAssembly location="BdcModelBuilder.ServiceShim.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\ServiceShim\ServiceShim.csproj">
       <safeControls>
